@@ -1,2 +1,12 @@
-VimCrypt~03!?¶,=Ø7onïX@·ÆRœ‡¨µ×w9h’ÏS€û¡¤®·‚İ57¸FË~møå†³—±ÈP‚›dz)Ï:pµ.ÛH>/SAC=#^çªîåQ€7DØ:W<Ø¦‹Ü‚Œ4ãŞP{ §{ºŞ=—ï¦ã$¦¼ğ~”%??O81†9Åİò
-9]Eşƒåt«éb&í-Ïe:ŸÚn\»™µ"ˆ£ìdÕô3»H°û	İ_åÆ­HĞ´×é×8DÇ
+#include <stdio.h>
+
+/**
+ * main - start line
+ *
+ * Return: return 0 
+ */
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
+}
