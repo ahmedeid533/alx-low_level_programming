@@ -3,7 +3,7 @@
 /**
  * main - first line of code
  *
- * return: should return 0 always
+ * Return: should return 0 always
  *
  * sizeof: return type is lu
  */
