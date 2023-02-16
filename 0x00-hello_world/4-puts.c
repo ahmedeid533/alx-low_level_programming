@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- *print text by  
- *puts functon
+ *main -  print text by puts
  *
- *and return 0 when true
+ *Return: return 0 when true
  */
 int main(void) 
 {
