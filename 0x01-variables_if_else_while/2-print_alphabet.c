@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-/*
+/**
  * main - this app print
- * characters from a to z 
+ * characters from a to z
  * by ascii code term
  *
  * Return: 0 mean success
  *
  */
-int main (void) 
+int main (void)
 {
-   char character;
+	char character;
 
-   for(character = 'a' ; character <= 'z' ; character++) 
-   {
-      putchar(character);
-   }
-   return(0);
+   	for (character = 'a'; character <= 'z'; character++) 
+   	{
+      		putchar(character);
+   	}
+   	return(0);
 }
