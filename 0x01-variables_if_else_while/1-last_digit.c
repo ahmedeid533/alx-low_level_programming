@@ -5,7 +5,7 @@
 /**
  *main - entry point
  *
- *Return 0 mean successful
+ *Return: 0 mean successful
  *
  *this small app should get
  *last digit and compare it
