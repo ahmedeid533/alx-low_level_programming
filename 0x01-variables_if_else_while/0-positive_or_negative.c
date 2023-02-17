@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - start point fir function that determen the number is positive or negative
- *
+ * main - start point for function
+ * that determen the number is positive or negative
+ * Return: 0 for success 
  */
 int main(void)
 {
@@ -14,8 +15,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 		printf("%d is negative\n", n);
-	else
+	else if (n > 0)
 		printf("%d is positive\n", n);
+	else 
+		printf("%d is zero\n", n);
 
 	return (0);
 }
