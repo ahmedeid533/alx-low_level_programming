@@ -8,13 +8,13 @@
  * Return: 0 mean success
  *
  */
-int main (void)
+int main(void)
 {
 	char character;
 
-   	for (character = 'a'; character <= 'z'; character++) 
-   	{
-      		putchar(character);
-   	}
-   	return(0);
+	for (character = 'a'; character <= 'z'; character++)
+	{
+		putchar(character);
+	}
+	return (0);
 }
