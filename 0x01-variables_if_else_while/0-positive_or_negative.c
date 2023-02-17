@@ -5,7 +5,7 @@
 /**
  * main - start point for function
  * that determen the number is positive or negative
- * Return: 0 for success 
+ * Return: 0 for success
  */
 int main(void)
 {
