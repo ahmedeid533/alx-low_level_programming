@@ -20,4 +20,5 @@ void print_to_98(int n)
 		n += c;
 		printf(", %d", n);
 	}
+	_putchar('\n');
 }
