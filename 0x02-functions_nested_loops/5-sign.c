@@ -4,9 +4,11 @@
  * print_sign - print sign and return number
  * represent this sign
  *
- * Returns: 1 and prints + if n is greater than zero
- * Returns: 0 and prints 0 if n is zero
- * Returns: -1 and prints - if n is less than zero
+ * Return: 1 and prints + if n is greater than zero
+ * -Returns 0 and prints 0 if n is zero
+ * --Returns -1 and prints - if n is less than zero
+ * 
+ * @n: signed number
  */
 
 int print_sign(int n)
