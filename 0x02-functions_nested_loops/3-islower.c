@@ -5,10 +5,12 @@
  * the char is lower or upper case
  *
  * Return: 1 if lower 0 otherwise
+ *
+ * @c: the check paramaeter
  */
 int _islower(int c)
 {
-	if (c>='a'&&c<='z')
+	if (c > 96 && c < 123)
 	{
 		return (1);
 	}
