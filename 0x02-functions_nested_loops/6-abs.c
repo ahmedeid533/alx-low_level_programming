@@ -3,7 +3,9 @@
 /**
  * _abs - return absolute number
  *
- * Retuen: absolute number
+ * Return: absolute number
+ *
+ * @n: number should be absoluted
  */
 int _abs(int n)
 {
