@@ -4,7 +4,6 @@
  * print_alphabet - this function should print 
  * alphabet followed by new line
  *
- * Return: should return 0 after success
  */
 
 void print_alphabet(void)
