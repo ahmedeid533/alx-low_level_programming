@@ -2,8 +2,8 @@
 
 /**
  * _isalpha - check if char is alpha
- *
- * Retuen: 1 if alpha 0 otherwise
+ * @c: the check char
+ * Return: 1 if alpha 0 otherwise
  */
 int _isalpha(int c)
 {
@@ -12,4 +12,4 @@ int _isalpha(int c)
 		return (1);
 	}
 	return (0);
-}	
+}
