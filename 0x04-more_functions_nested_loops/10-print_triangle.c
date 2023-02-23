@@ -4,7 +4,7 @@
  * print_triangle - prints a triangle
  * followed by a new line.
  *
- * Return: void no print
+ * Returns: void no print
  *
  * size: is the size of the triangle
  */
@@ -24,6 +24,10 @@ void print_triangle(int size)
 		{
 			_putchar('#');
 		}
+		_putchar('\n');
+	}
+	if (size <= 0)
+	{
 		_putchar('\n');
 	}
 }
