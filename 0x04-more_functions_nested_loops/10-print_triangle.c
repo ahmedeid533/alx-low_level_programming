@@ -4,9 +4,9 @@
  * print_triangle - prints a triangle
  * followed by a new line.
  *
- * Returns: void no print
+ * Return: void no print
  *
- * size: is the size of the triangle
+ * @size: is the size of the triangle
  */
 void print_triangle(int size)
 {
