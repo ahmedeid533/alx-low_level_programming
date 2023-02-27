@@ -24,6 +24,7 @@ void rev_string(char *s)
 		i++;
 		length--;
 	}
+	i--;
 	while (i >= 0)
 	{
 		s[i] = stemp[i];
