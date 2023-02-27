@@ -9,7 +9,7 @@
  */
 void rev_string(char *s)
 {
-	char stemp[50];
+	char stemp[500];
 	int length = 0;
 	int i = 0;
 
@@ -17,7 +17,6 @@ void rev_string(char *s)
 	{
 		length++;
 	}
-	length--;
 	while (length >= 0)
 	{
 		stemp[i] = s[length];
