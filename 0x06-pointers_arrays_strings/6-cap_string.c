@@ -16,7 +16,7 @@ char *cap_string(char *c)
 	}
 	while (c[i] != '\0')
 	{
-		if (c[i] == ' ')
+		if (!(c[i] >= 'a' && c[i] <= 'z') && !(c[i] >= 'A' && c[i] <= 'Z'))
 		{
 			i++;
 			if (c[i] >= 'a' && c[i] <= 'z')
@@ -28,4 +28,5 @@ char *cap_string(char *c)
 		}
 		i++;
 	}
+	return (c);
 }
