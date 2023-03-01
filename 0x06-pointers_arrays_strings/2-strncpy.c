@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		last++;
 	}
-	while (i < n && i < last)
+	while (i < n && i <= last)
 	{
 		dest[i] = src[i];
 		i++;
@@ -29,7 +29,7 @@ char *_strncpy(char *dest, char *src, int n)
 			break;
 		}
 	}
-	while (i < n && i < last)
+	while (i < n && i <= last)
 	{
 		dest[i] = '\0';
 		i++;
