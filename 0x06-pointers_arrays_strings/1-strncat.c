@@ -4,12 +4,13 @@
  * _strncat - function that concatenates two strings
  * it will use at most n bytes from src
  *
- * Return: a pointer to the resulting string dest
+ * Return: pointer to the resulting string dest
  *
  * @dest: concating string in
  *
  * @src: concated string
  *
+ * @n: number of characters will be concated
  */
 char *_strncat(char *dest, char *src, int n)
 {
