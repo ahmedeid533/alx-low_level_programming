@@ -24,5 +24,5 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	dest[i] = src[j];
-	return (&dest);
+	return (dest);
 }
