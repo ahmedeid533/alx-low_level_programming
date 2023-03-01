@@ -19,7 +19,7 @@ void reverse_array(int *a, int n)
 	}
 	for (j = 0; j < n; j++)
 	{
-		a[i] = array[j];
 		i--;
+		a[i] = array[j];
 	}
 }
