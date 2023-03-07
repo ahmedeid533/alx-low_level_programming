@@ -12,8 +12,8 @@ void print_diagsums(int *a, int size)
 {
 	int i;
 	int j;
-	int isum;
-	int jsum;
+	int isum = 0;
+	int jsum = 0;
 
 	for (i = 0; i < size; i++)
 	{
