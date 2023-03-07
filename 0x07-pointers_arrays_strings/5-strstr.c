@@ -3,8 +3,8 @@
 /**
  * _strstr - function that locates a substring
  *
- * haystack: string
- * needle: string
+ * @haystack: string thing
+ * @needle: string thuinf
  * Return: pointer
  */
 char *_strstr(char *haystack, char *needle)
