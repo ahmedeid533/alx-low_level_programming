@@ -6,7 +6,7 @@
  * otherwise return 0
  * @n: the checking number
  */
-int RealCheck(int x, div);
+int RealCheck(int x, int div);
 int is_prime_number(int n)
 {
 	if (n <= 2)
@@ -25,7 +25,7 @@ int is_prime_number(int n)
  * @duv: the dividor
  * Return: int
  */
-int RealCheck(int x, div)
+int RealCheck(int x, int div)
 {
 	if (!(x % div))
 	{
