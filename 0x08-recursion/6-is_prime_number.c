@@ -5,6 +5,11 @@
  * Return: 1 if the input integer is a prime number
  * otherwise return 0
  * @n: the checking number
+ *
+ * RealCheck - realy check function
+ * @x: the number
+ * @div: the dividor
+ * Retur: int
  */
 int RealCheck(int x, int div);
 int is_prime_number(int n)
@@ -19,12 +24,6 @@ int is_prime_number(int n)
 	}
 	return (RealCheck(n, 2));
 }
-/**
- * RealCheck - realy check function
- * @x: the number
- * @duv: the dividor
- * Return: int
- */
 int RealCheck(int x, int div)
 {
 	if (!(x % div))
@@ -35,5 +34,5 @@ int RealCheck(int x, int div)
 	{
 		return (1);
 	}
-	return(RealCheck(x, div + 1));
+	return (RealCheck(x, div + 1));
 }
