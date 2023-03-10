@@ -3,5 +3,5 @@
 
 int _putchar(char c);
 
-int convert(char *s)
+int _convert(char *s);
 #endif

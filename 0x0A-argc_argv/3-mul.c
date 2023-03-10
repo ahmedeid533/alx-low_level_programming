@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * convert - from string to number
+ * _convert - from string to number
  * @s: string
- * retunr: number
+ * Return: number
  */
-int convert(char *s)
+int _convert(char *s)
 {
 	int number = 0;
 	int i = 0;
@@ -21,11 +22,11 @@ int convert(char *s)
 
 	while (s[i] != '\0')
 	{
-		i++;
 		if ((s[i] > '9') || (s[i] < '0'))
 		{
 			return (-1);
-		}	
+		}
+		i++;
 	}
 	i--;
 	while (i >= mins)
@@ -46,13 +47,17 @@ int convert(char *s)
 int main(int argc, char *argv[])
 {
 	int mult;
+	int num1;
+	int num2;
 
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (-1);
 	}
-	mult = convert(argv[1]) * convert(argv[2]);
+	num1 = _convert(argv[1]);
+	num2 = _convert(argv[2]);
+	mult = num1 * num2;
 	printf("%d\n", mult);
 
 	return (0);
