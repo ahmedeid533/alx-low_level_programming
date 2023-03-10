@@ -48,11 +48,13 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int num = 0;
+
 	for (i = 1; i < argc; i++)
 	{
 		if (_convert(argv[i]) < 0)
 		{
 			printf("Error\n");
+			return (-1);
 		}
 		num += _convert(argv[i]);
 	}
