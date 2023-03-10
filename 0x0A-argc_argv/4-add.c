@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-
 /**
  * _convert - from string to number
  * @s: string
@@ -38,6 +37,7 @@ int _convert(char *s)
 	}
 	return (number);
 }
+
 /**
  * main - print name
  * @argc: number
@@ -46,19 +46,17 @@ int _convert(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int mult;
-	int num1;
-	int num2;
-
-	if (argc < 3)
+	int i;
+	int num = 0;
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (-1);
+		if (_convert(argv[i]) < 0)
+		{
+			printf("Error\n");
+		}
+		num += _convert(argv[i]);
 	}
-	num1 = _convert(argv[1]);
-	num2 = _convert(argv[2]);
-	mult = num1 * num2;
-	printf("%d\n", mult);
+	printf("%d\n", num);
 
 	return (0);
 }
