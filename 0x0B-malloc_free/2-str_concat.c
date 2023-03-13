@@ -11,8 +11,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ch;
-	//char *str1;
-	//char *str2;
+	/*char *str1;*/
+	/*char *str2;*/
 	int i;
 	int j;
 	int len;
