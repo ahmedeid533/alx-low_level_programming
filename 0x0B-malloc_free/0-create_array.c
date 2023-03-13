@@ -11,10 +11,8 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ch;
-	char *msg;
 	unsigned int i;
 
-	msg = "failed to allocate memory";
 	if (size <= 0)
 	{
 		return (NULL);
