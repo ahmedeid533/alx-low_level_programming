@@ -14,9 +14,17 @@ int **alloc_grid(int width, int height)
 	int i;
 
 	TwoArr = malloc(8 * height);
+	if (TwoArr == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < height; i++)
 	{
 		TwoArr[i] = malloc(sizeof(int) * width);
+		if (TwoArr[i] == NULL)
+		{
+			return (NULL);
+		}
 	}
 	return (TwoArr);
 }
