@@ -13,7 +13,7 @@ int **alloc_grid(int width, int height)
 	int **TwoArr;
 	int i;
 
-	*TwoArr = malloc(sizeof(*int) * height);
+	*TwoArr = malloc(sizeof(TwoArr) * height);
 	for (i = 0; i < height; i++)
 	{
 		TwoArr[i] = malloc(sizeof(int) * width);
