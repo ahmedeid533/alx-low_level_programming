@@ -18,6 +18,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	if (TwoArr == NULL)
 	{
+		free(TwoArr);
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
