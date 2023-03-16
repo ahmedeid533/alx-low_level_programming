@@ -9,7 +9,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *point = malloc(b);
+	int *point = malloc(b);
 
 	if (point == NULL)
 		return (98);
