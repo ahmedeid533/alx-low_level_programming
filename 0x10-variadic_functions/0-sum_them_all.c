@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * int sum_them_all - summing
+ * sum_them_all - summing
  * @n: number of args
  * Return: summ
  */
@@ -18,5 +18,6 @@ int sum_them_all(const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 		sum += va_arg(arg, unsigned int);
 
+	va_end(arg);
 	return (sum);
 }
