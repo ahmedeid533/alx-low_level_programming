@@ -17,11 +17,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (NULL);
 	}
 	traverse = *head;
-	while (traverse != NULL)
+	while (traverse->next != NULL)
 	{
 		traverse = traverse->next;
 	}
-	traverse = new;
+	traverse->next = new;
 	new->n = n;
 	new->next = NULL;
 	return (new);
