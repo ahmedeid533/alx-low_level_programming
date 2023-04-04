@@ -19,5 +19,5 @@ void free_listint(listint_t *head)
 		free(traverse);
 		traverse = head;
 	}
-	free(head);
+	free(traverse);
 }
