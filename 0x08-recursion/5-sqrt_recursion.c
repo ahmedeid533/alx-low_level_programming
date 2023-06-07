@@ -1,10 +1,10 @@
 #include "main.h"
-int sqrt(n, i)
+int sqrt(int n, int i)
 {
-	if (i*i == n)
+	if (i * i == n)
 		return (i);
-	if (i >= n/i)
-		return (-1);
+	if (i > n/i)
+		return(-1);
 	else sqrt(n, i++);
 }
 /**
