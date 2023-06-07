@@ -1,11 +1,17 @@
 #include "main.h"
-int sqrt(int n, int i)
+/**
+ * _sqrt - the actual function
+ * @n: the number
+ * @i: the gusse
+ * Return: sqrt of number
+ */
+int _sqrt(int n, int i)
 {
 	if (i * i == n)
 		return (i);
-	if (i > n/i)
-		return(-1);
-	else sqrt(n, i++);
+	if (i > n / i)
+		return (-1);
+	return (_sqrt(n, i++));
 }
 /**
  * _sqrt_recursion - git sqrt by recursion
@@ -15,6 +21,6 @@ int sqrt(int n, int i)
 int _sqrt_recursion(int n)
 {
 	int i = 2;
-	return (sqrt(n,i));
-}
 
+	return (_sqrt(n, i));
+}
