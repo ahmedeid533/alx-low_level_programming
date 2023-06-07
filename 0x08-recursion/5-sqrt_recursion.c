@@ -11,7 +11,7 @@ int _sqrt(int n, int i)
 		return (i);
 	if (i > n / i)
 		return (-1);
-	return (_sqrt(n, i+1));
+	return (_sqrt(n, i + 1));
 }
 /**
  * _sqrt_recursion - git sqrt by recursion
@@ -20,7 +20,7 @@ int _sqrt(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
-	int i = 2;
+	int i = 1;
 
 	return (_sqrt(n, i));
 }
