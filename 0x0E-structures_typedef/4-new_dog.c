@@ -1,5 +1,6 @@
 #include "dog.h"
-
+#include "9-strcpy.c"
+#include "2-strlen.c"
 /**
  * new_dog - You have to store a copy of name and owner
  * @name: dog name
@@ -14,26 +15,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	len1 = _strlen(name);
 	len2 = _strlen(owner);
-	dog = malloc(sizeof(dog_t));
-	if (dog == NULL)
+	my_dog = malloc(sizeof(dog_t));
+	if (my_dog == NULL)
 		return (NULL);
 
-	dog->name = malloc(sizeof(char) * (len1 + 1));
-	if (dog->name == NULL)
+	my_dog->name = malloc(sizeof(char) * (len1 + 1));
+	if (my_dog->name == NULL)
 	{
-		free(dog);
+		free(my_dog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (len2 + 1));
-	if (dog->owner == NULL)
+	my_dog->owner = malloc(sizeof(char) * (len2 + 1));
+	if (my_dog->owner == NULL)
 	{
-		free(dog);
-		free(dog->name);
+		free(my_dog);
+		free(my_dog->name);
 		return (NULL);
 	}
-	_strcpy(dog->name, name);
-	_strcpy(dog->owner, owner);
-	dog->age = age;
+	_strcpy(my_dog->name, name);
+	_strcpy(my_dog->owner, owner);
+	my_dog->age = age;
 
-	return (dog);
+	return (my_dog);
 }
