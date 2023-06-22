@@ -30,10 +30,10 @@ void print_float(va_list arg)
 }
 
 /**
- * print_string - Print a string
+ * print_str - Print a string
  * @arg: args
  */
-void print_string(va_list arg)
+void print_str(va_list arg)
 {
 	char *str = va_arg(arg, char *);
 
@@ -54,7 +54,7 @@ void print_all(const char * const format, ...)
 	char *print_type = "cifs";
 
 	/* Array of function pointers */
-	void (*print_fn[])(va_list) = {print_char, print_int, print_float, print_string};
+	void (*print_fn[])(va_list) = {print_char, print_int, print_float, print_str};
 
 	/* Initialize variable argument list */
 	va_start(args, format);
