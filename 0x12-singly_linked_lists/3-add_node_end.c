@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - append in front of list
+ * add_node_end - append in front of list
  * @head: head of the list
  * @str: the node text
  * Return: the address of the new element
