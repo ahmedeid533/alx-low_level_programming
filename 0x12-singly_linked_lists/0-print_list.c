@@ -8,14 +8,14 @@
 size_t print_list(const list_t *h)
 {
 	size_t counter = 0;
-	list_t *head = &h;
+	const list_t *head = h;
 
-	while (head != "\0")
+	while (head != NULL)
 	{
-		if (head->str == "\0")
-			pritnf("[0] (nil)");
+		if (head->str == NULL)
+			printf("[0] (nil)\n");
 		else
-			printf("[%lu] %s", sizeof(head->str), head->str);
+			printf("[%lu] %s\n", sizeof(head->str) - 3, head->str);
 		head = head->next;
 		counter++;
 	}
