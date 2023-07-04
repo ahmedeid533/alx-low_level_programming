@@ -6,7 +6,7 @@
  * @index: position
  * Return: the node
  */
-int *delete_nodeint_at_index(listint_t **head, unsigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *traverse;
 	listint_t *delete;
@@ -19,7 +19,7 @@ int *delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(traverse);
 		return (1);
 	}
-	for (i = 0; i < (idx - 1); i++)
+	for (i = 0; i < (index - 1); i++)
 	{
 		if (traverse == NULL)
 			return (-1);
