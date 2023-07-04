@@ -35,10 +35,10 @@ int main(void)
     delete_nodeint_at_index(&head, 0);
     print_listint(head);
     printf("-----------------\n");
-    delete_nodeint_at_index(&head, 1);
+    delete_nodeint_at_index(&head, 5);
     print_listint(head);
     printf("-----------------\n");
-    delete_nodeint_at_index(&head, 1);
+    delete_nodeint_at_index(&head, 6);
     print_listint(head);
     printf("-----------------\n");
     delete_nodeint_at_index(&head, 1);

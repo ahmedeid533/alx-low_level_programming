@@ -24,10 +24,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	delete = traverse->next;
 	for (i = 0; i < (index - 1); i++)
 	{
-		if (traverse == NULL)
-			return (-1);
 		traverse = traverse->next;
 		delete = traverse->next;
+		if (traverse == NULL || delete == NULL)
+			return (-1);
 	}
 	traverse->next = delete->next;
 	free(delete);
