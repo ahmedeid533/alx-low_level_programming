@@ -9,6 +9,7 @@ void print_binary(unsigned long int n)
 {
 	int num_Bits = 0;
 	unsigned long int temp = n;
+	int i;
 
 	while (temp > 0)
 	{
@@ -20,7 +21,8 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	for (int i = num_Bits - 1; i >= 0; i--)
+
+	for (i = num_Bits - 1; i >= 0; i--)
 	{
 		unsigned long int mask = 1UL << i;
 
