@@ -8,18 +8,10 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int len = get_len(b) - 1;
-	int base = 2;
-	unsigned int unit;
+	int base = 1;
+	unsigned int unit = 0;
 
-	if (b[len] == '0' || b[len] == '1')
-	{
-		unit = b[len--] - '0';
-	}
-	else
-	{
-		return (0);
-	}
-	for (len; len >= 0; len--)
+	for (; len >= 0; len--)
 	{
 		if (b[len] == '0' || b[len] == '1')
 		{
@@ -29,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		base *= base;
+		base *= 2;
 	}
 	return (unit);
 }
@@ -39,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
  * @str: string
  * Return: int
  */
-int get_len(const *str)
+int get_len(const char *str)
 {
 	int count = 0;
 
