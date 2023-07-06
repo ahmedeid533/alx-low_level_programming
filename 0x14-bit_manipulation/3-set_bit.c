@@ -6,11 +6,12 @@
  * @index: the index
  * Return: the bit
  */
-int set_bit(unsigned long int n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	if (index >= 32)
 	{
 		return (-1);
 	}
-	return ((n | (1UL << index));
+	*n |= (1UL << index);
+	return(1);
 }
