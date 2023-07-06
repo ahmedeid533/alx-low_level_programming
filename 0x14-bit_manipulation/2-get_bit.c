@@ -2,7 +2,7 @@
 
 /**
  * get_bit - as it's name
- * @n: the number 
+ * @n: the number
  * @index: the index
  * Return: the bit
  */
