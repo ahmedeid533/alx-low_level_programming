@@ -17,7 +17,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	else
 	{
-		return 0;
+		return (0);
 	}
 	for (len; len >= 0; len--)
 	{
@@ -27,17 +27,16 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-			return 0;
+			return (0);
 		}
 		base *= base;
 	}
 	return (unit);
 }
 
-
 /**
  * get_len - get string length
- * @str: string 
+ * @str: string
  * Return: int
  */
 int get_len(const *str)
@@ -48,5 +47,5 @@ int get_len(const *str)
 	{
 		count++;
 	}
-	return count;
+	return (count);
 }
