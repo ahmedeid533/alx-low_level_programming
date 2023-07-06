@@ -24,6 +24,6 @@ void print_binary(unsigned long int n)
 	{
 		unsigned long int mask = 1UL << i;
 
-		_putchar ((n & mask) ? '1' : '0');
+		_putchar((n & mask) ? '1' : '0');
 	}
 }
