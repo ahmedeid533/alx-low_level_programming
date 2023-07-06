@@ -7,12 +7,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int len = get_len(b) - 1;
+	int len;
 	int base = 1;
 	unsigned int unit = 0;
 
-	if (b == NULL)
+	if (!b)
+	{
 		return (0);
+	}
+	len = get_len(b) - 1;
 	for (; len >= 0; len--)
 	{
 		if (b[len] == '0' || b[len] == '1')
