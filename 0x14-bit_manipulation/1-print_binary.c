@@ -20,7 +20,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	for (int i = num_bBts - 1; i >= 0; i--)
+	for (int i = num_Bits - 1; i >= 0; i--)
 	{
 		unsigned long int mask = 1 << i;
 
