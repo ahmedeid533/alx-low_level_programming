@@ -9,15 +9,38 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *file;
+	ssize_t redn;
+	ssize_t wrtn;
+	char *text;
 
 	if (filename == NULL)
 	{
-		return(0);
+		return (0);
 	}
-	file = open(filename, "r");
+	file = fopen(filename, "r");
 	if (file == NULL)
 	{
-		return(0);
+		return (0);
 	}
-	return(write(1, file, letters));
+
+       	text = malloc(letters);
+	if (text == NULL)
+	{
+		return (0);
+	}
+
+       	redn = read(3, text, letters);
+	if (redn == -1)
+	{
+		return (0);
+	}
+
+	wrtn = write(1, text, redn);
+	if (wrtn == -1)
+	{
+		return (0);
+	}
+	free(text);
+	fclose(file);
+	return (wrtn);
 }
