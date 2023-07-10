@@ -25,16 +25,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	text = malloc(letters);
 	if (text == NULL)
 	{
+		fclose(file);
 		return (0);
 	}
 	redn = read(3, text, letters);
 	if (redn == -1)
 	{
+		free(text);
+		fclose(file);
 		return (0);
 	}
 	wrtn = write(1, text, redn);
 	if (wrtn == -1)
 	{
+		free(text);
+		fclose(file);
 		return (0);
 	}
 	free(text);
