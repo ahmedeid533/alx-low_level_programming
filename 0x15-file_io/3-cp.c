@@ -9,6 +9,7 @@
  * print_error - print error
  * @msg: print the msg
  * @arg: if there
+ * @code: error
  */
 void print_error(int code, const char *msg, const char *arg)
 {
@@ -20,6 +21,7 @@ void print_error(int code, const char *msg, const char *arg)
  * print_errori - print error
  * @msg: print the msg
  * @arg: if there
+ * @code: error
  */
 void print_errori(int code, const char *msg, int arg)
 {
@@ -39,6 +41,7 @@ int main(int argc, char *argv[])
 	FILE *fp_from;
 	FILE *fp_to;
 	size_t bytes_read, bytes_written;
+
 	if (argc != 3)
 	{
 		print_error(97, "Usage: cp file_from file_to\n", "");
@@ -73,5 +76,5 @@ int main(int argc, char *argv[])
 	{
 		print_errori(100, "Error: Can't close fd %d\n", fileno(fp_to));
 	}
-	return 0;
+	return (0);
 }
