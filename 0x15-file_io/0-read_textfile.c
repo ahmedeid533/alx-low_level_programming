@@ -8,7 +8,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *file;
+	int file;
 	ssize_t redn;
 	ssize_t wrtn;
 	char *text;
@@ -18,7 +18,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	file = fopen(filename, "r");
-	if (file == NULL)
+	if (file == -1)
 	{
 		return (0);
 	}
@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fclose(file);
 		return (0);
 	}
-	redn = read(3, text, letters);
+	redn = read(file, text, letters);
 	if (redn == -1)
 	{
 		free(text);
