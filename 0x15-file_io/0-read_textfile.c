@@ -22,19 +22,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-
-       	text = malloc(letters);
+	text = malloc(letters);
 	if (text == NULL)
 	{
 		return (0);
 	}
-
-       	redn = read(3, text, letters);
+	redn = read(3, text, letters);
 	if (redn == -1)
 	{
 		return (0);
 	}
-
 	wrtn = write(1, text, redn);
 	if (wrtn == -1)
 	{
