@@ -17,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	file = fopen(filename, "r");
+	file = open(filename, O_RDONLY);
 	if (file == -1)
 	{
 		return (0);
@@ -25,24 +25,24 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	text = malloc(letters);
 	if (text == NULL)
 	{
-		fclose(file);
+		close(file);
 		return (0);
 	}
 	redn = read(file, text, letters);
 	if (redn == -1)
 	{
 		free(text);
-		fclose(file);
+		close(file);
 		return (0);
 	}
-	wrtn = write(1, text, redn);
-	if (wrtn == -1)
+	wrtn = write(STDOUT_FILENO, text, redn);
+	if (wrtn == -1 || wrtn != redn)
 	{
 		free(text);
-		fclose(file);
+		close(file);
 		return (0);
 	}
 	free(text);
-	fclose(file);
+	close(file);
 	return (wrtn);
 }
