@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - at end 
+ * add_dnodeint_end - at end
  * 
  * @head: head
  * @n: value
@@ -23,11 +23,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		while (h->next != NULL)
 			h = h->next;
-	}
+        h->next = new;
+	}else
+    {
+        *head = new;
+    }
 	new->prev = h;
-	if (h != NULL)
-		h->next = new;
 
-	*head = new;
 	return (new);
 }
