@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
 
 /**
  * print_dlistint - print dllist
@@ -11,11 +10,11 @@ size_t print_dlistint(const dlistint_t *h)
 	dlistint_t *current;
 	size_t length;
 
-	current = (dlistint_t*)h;
+	current = (dlistint_t *)h;
 	length = 0;
 	while (current != NULL)
 	{
-		printf("%i",current->n);
+		printf("%i\n",current->n);
 		current = current->next;
 		length++;
 	}
