@@ -2,7 +2,7 @@
 
 /**
  * sum_dlistint - summ nodes
- * 
+ *
  * @head: header
  * Return: summition
  */
