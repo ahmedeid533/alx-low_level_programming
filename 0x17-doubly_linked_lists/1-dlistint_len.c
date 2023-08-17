@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - length
- * 
+ *
  * @h: the head
  * Return: the size
  */
