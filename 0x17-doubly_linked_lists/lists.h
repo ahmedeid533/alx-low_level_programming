@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stddef.h>
-#include <stdio.h>
 
 /**
  * struct dlistint_s - doubly linked list
