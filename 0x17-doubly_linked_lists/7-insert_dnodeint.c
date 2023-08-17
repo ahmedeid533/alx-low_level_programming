@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - as it is
  *
- * @h: header 
+ * @h: header
  * @idx: the index
  * @n: the value
  * Return: the node
