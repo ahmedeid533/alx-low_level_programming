@@ -1,26 +1,37 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * main - check the code
+ * insert_dnodeint_at_index - as it is
  *
- * Return: Always EXIT_SUCCESS.
+ * @h: header
+ * @idx: the index
+ * @n: the value
+ * Return: the node
  */
-int main(void)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *head;
+	unsigned int i;
+	dlistint_t *head;
+	dlistint_t *new;
 
-    head = NULL;
-    add_dnodeint_end(&head, 0);
-    add_dnodeint_end(&head, 1);
-    add_dnodeint_end(&head, 2);
-    add_dnodeint_end(&head, 3);
-    add_dnodeint_end(&head, 4);
-    print_dlistint(head);
-    printf("-----------------\n");
-    insert_dnodeint_at_index(&head, 5, 4096);
-    print_dlistint(head);
-    return (EXIT_SUCCESS);
+	head = *h;
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+	for (i = 0; i < idx; i++)
+	{
+		if (head == NULL)
+			return (NULL);
+		head = head->next;
+	}
+	if (head == NULL)
+		return (add_dnodeint_end(h, n));
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	new->next = head;
+	new->prev = head->next;
+	head->prev->next = new;
+	head->prev = new;
+	return (new);
 }
