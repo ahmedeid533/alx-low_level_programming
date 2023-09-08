@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * hash_table_print - print the table 
+ * hash_table_print - print the table
  * 
  * @ht: the hash table head
  */
