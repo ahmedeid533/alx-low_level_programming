@@ -3,8 +3,8 @@
 
 /**
  * hash_table_create - create hash table
- * 
- * @size: size of the hash table 
+ *
+ * @size: size of the hash table
  * Return: hash_table_t*
  */
 
