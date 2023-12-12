@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <stdio.h>
 
 /**
  * binary_search - searches for a value in a sorted array of integers
@@ -19,6 +20,15 @@ int binary_search(int *array, size_t size, int value) {
 	}
 	while (low <= high) {
 		int mid = (low + high) / 2;
+
+		printf("Searching in array: ");
+		for (int i = low; i <= high; i++) {
+			printf("%d", array[i]);
+			if (i != high) {
+				printf(", ");
+			}
+		}
+		printf("\n");
 
 		if (array[mid] == value) {
 			return mid;
