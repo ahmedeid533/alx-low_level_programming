@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * binary_search - searches for a value in a sorted array of integers
- * using the Binary search algorithm
+ * binary_search - searches for a value in a sorted 
+ * array of integersusing the Binary search algorithm
  *
  * @array: pointer to the first element of the array to search in
  * @size: number of elements in array
